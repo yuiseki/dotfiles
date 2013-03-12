@@ -1,0 +1,1 @@
+/home/yuiseki/dotfiles/.vim/bundle/vim-pathogen/autoload/pathogen.vim
