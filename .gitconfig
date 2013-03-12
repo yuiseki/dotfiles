@@ -1,0 +1,12 @@
+[user]
+	email = yuiseki@gmail.com
+	name = yuiseki
+[color]
+	ui = auto
+[diff]
+  external = git_diff_wrapper
+[pager]
+  diff =
+[alias]
+	ci = commit
+	st = status
