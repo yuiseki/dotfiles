@@ -1,0 +1,3 @@
+[submodule "nave"]
+	path = nave
+	url = https://github.com/isaacs/nave.git
