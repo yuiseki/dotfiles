@@ -1,0 +1,24 @@
+{
+  "name": "yuiseki",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "ejs": "~0.8.3",
+    "express": "~3.0.6",
+    "bower": "~0.8.5",
+    "grunt-cli": "~0.1.6",
+    "yo": "~1.0.0-beta.3",
+    "nib": "~0.9.1",
+    "stylus": "~0.32.0",
+    "grunt": "~0.4.0",
+    "grunt-contrib-sass": "~0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
