@@ -6,13 +6,16 @@
   "dependencies": {
     "ejs": "~0.8.3",
     "express": "~3.0.6",
-    "bower": "~0.8.5",
-    "grunt-cli": "~0.1.6",
-    "yo": "~1.0.0-beta.3",
     "nib": "~0.9.1",
     "stylus": "~0.32.0",
+    "bower": "~0.8.5",
+    "yo": "~1.0.0-beta.3",
+    "grunt-cli": "~0.1.6",
     "grunt": "~0.4.0",
-    "grunt-contrib-sass": "~0.2.2"
+    "grunt-contrib-sass": "~0.2.2",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-clean": "~0.4.0"
   },
   "devDependencies": {},
   "scripts": {

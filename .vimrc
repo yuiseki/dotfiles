@@ -58,6 +58,10 @@ set shiftwidth=2
 "set list
 "set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 
+set foldlevel=99
+set foldlevelstart=99
+set nofoldenable
+
 
 " F6で日時を挿入
 nnoremap <F6> :r!date/T<CR>
