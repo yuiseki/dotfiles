@@ -1,6 +1,3 @@
-[submodule "bin/nave"]
-	path = bin/nave
-	url = https://github.com/isaacs/nave.git
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
@@ -19,6 +16,10 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bin/rbenv"]
-	path = bin/rbenv
+
+[submodule "bin/nave"]
+	path = bin/nave
+	url = https://github.com/isaacs/nave.git
+[submodule "bin/rbenv_git"]
+	path = bin/rbenv_git
 	url = https://github.com/sstephenson/rbenv.git
