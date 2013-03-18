@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
+[submodule "bin/rbenv"]
+	path = bin/rbenv
+	url = https://github.com/sstephenson/rbenv.git
