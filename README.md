@@ -5,5 +5,7 @@ my dotfiles
 
 ```
 git clone git@github.com:yuiseki/dotfiles.git
-dotinstall.sh
+git submodule init
+git submodule update
+./dotinstall.sh
 ```
