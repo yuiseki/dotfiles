@@ -1,3 +1,5 @@
 
 *.swp
 .netrwhist
+.rbenv/shims/*
+.rbenv/versions/*
