@@ -1,3 +1,10 @@
+[submodule "bin/nave"]
+	path = bin/nave
+	url = https://github.com/isaacs/nave.git
+[submodule "bin/rbenv_git"]
+	path = bin/rbenv_git
+	url = https://github.com/sstephenson/rbenv.git
+
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
@@ -16,10 +23,18 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-
-[submodule "bin/nave"]
-	path = bin/nave
-	url = https://github.com/isaacs/nave.git
-[submodule "bin/rbenv_git"]
-	path = bin/rbenv_git
-	url = https://github.com/sstephenson/rbenv.git
+[submodule ".vim/bundle/vim-aftereimage"]
+	path = .vim/bundle/vim-aftereimage
+	url = git://github.com/tpope/vim-afterimage.git
+[submodule "bin/xbuild"]
+	path = bin/xbuild
+	url = https://github.com/tagomoris/xbuild.git
+[submodule ".vim/bundle/unite.vim"]
+	path = .vim/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
+[submodule ".vim/bundle/neocomplecache"]
+	path = .vim/bundle/neocomplecache
+	url = https://github.com/Shougo/neocomplcache.git
+[submodule ".vim/bundle/vim-quickrun"]
+	path = .vim/bundle/vim-quickrun
+	url = https://github.com/thinca/vim-quickrun
