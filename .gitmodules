@@ -11,9 +11,6 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-#[submodule ".vim/bundle/vim-markdown"]
-#	path = .vim/bundle/vim-markdown
-#	url = https://github.com/plasticboy/vim-markdown.git
 [submodule ".vim/bundle/vim-stylus"]
 	path = .vim/bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
@@ -23,9 +20,6 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule ".vim/bundle/vim-aftereimage"]
-	path = .vim/bundle/vim-aftereimage
-	url = git://github.com/tpope/vim-afterimage.git
 [submodule "bin/xbuild"]
 	path = bin/xbuild
 	url = https://github.com/tagomoris/xbuild.git
