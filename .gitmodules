@@ -38,3 +38,6 @@
 [submodule ".vim/bundle/vim-quickrun"]
 	path = .vim/bundle/vim-quickrun
 	url = https://github.com/thinca/vim-quickrun
+[submodule ".vim/bundle/neosnippet"]
+	path = .vim/bundle/neosnippet
+	url = https://github.com/Shougo/neosnippet.git
