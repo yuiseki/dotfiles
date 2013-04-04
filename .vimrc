@@ -1,4 +1,4 @@
-set nocompatible
+"set nocompatible
 set viminfo+=!
 
 
@@ -52,8 +52,8 @@ if has("syntax")
 endif
 
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 " 不可視文字を表示する
 "set list
 "set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
