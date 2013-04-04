@@ -4,6 +4,9 @@
 [submodule "bin/rbenv_git"]
 	path = bin/rbenv_git
 	url = https://github.com/sstephenson/rbenv.git
+[submodule "bin/xbuild"]
+	path = bin/xbuild
+	url = https://github.com/tagomoris/xbuild.git
 
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
@@ -21,9 +24,6 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bin/xbuild"]
-	path = bin/xbuild
-	url = https://github.com/tagomoris/xbuild.git
 [submodule ".vim/bundle/unite.vim"]
 	path = .vim/bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim.git
