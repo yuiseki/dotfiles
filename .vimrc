@@ -93,6 +93,7 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
 let g:neocomplcache_snippets_dir = "~/.vim/bundle/snipmate-snippets/snippets"
 
 

@@ -39,3 +39,9 @@
 [submodule ".vim/bundle/snipmate-snippets"]
 	path = .vim/bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
+[submodule ".vim/bundle/vimdoc-ja"]
+	path = .vim/bundle/vimdoc-ja
+	url = https://github.com/vim-jp/vimdoc-ja.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
