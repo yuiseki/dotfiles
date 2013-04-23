@@ -18,3 +18,10 @@ do
 	echo $file
 	ln -s $HOME/dotfiles/$file $HOME/$file
 done
+
+git submodule init
+git submodule update
+
+# 
+# git rm --cached path/to/hoge
+
