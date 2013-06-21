@@ -4,4 +4,3 @@
 .rbenv/shims/*
 .rbenv/versions/*
 vimproc_unix.so
-.vim/bundle/*
