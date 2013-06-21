@@ -36,9 +36,9 @@
 [submodule ".vim/bundle/neosnippet"]
 	path = .vim/bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet.git
-[submodule ".vim/bundle/snipmate-snippets"]
-	path = .vim/bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+    url = https://github.com/honza/vim-snippets.git
 [submodule ".vim/bundle/vimdoc-ja"]
 	path = .vim/bundle/vimdoc-ja
 	url = https://github.com/vim-jp/vimdoc-ja.git
@@ -48,3 +48,6 @@
 [submodule ".vim/bundle/vim-indent-guides"]
 	path = .vim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule ".vim/bundle/vim-jade"]
+	path = .vim/bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
