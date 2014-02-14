@@ -3,8 +3,8 @@ set viminfo+=!
 
 
 filetype off
-call pathogen#runtime_append_all_bundles()
-"call pathogen#incubate()
+"call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 filetype on
 filetype indent on
 filetype plugin on
@@ -83,7 +83,15 @@ autocmd QuickfixCmdPost * copen
 nnoremap <C-]> g<C-]>zz
 " タグを上向き検索
 set tags=./tags;
-"
+
+
+"QuickRunの設定
+let g:quickrun_config = {
+    \"_" : {
+        \ "outputter/buffer/split" : ":botright 4sp",
+        \ "outputter/buffer/close_on_empty" : 1
+    \}
+\}
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
