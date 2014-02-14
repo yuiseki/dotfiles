@@ -3,4 +3,5 @@
 .netrwhist
 .rbenv/shims/*
 .rbenv/versions/*
+.vim/bundle/*
 vimproc_unix.so
