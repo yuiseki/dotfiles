@@ -1,18 +1,19 @@
 #!/bin/bash
 
 echo -e " - link dot files\n"
+mkdir $HOME/old
 for file in `ls -a`
 do
-	if [[ "$file" =~ ^..?(git|gitignore|gitmodules)?$ ]]\
+	if [[ "$file" =~ ^..?(bin|playbooks|git|gitignore|gitmodules)?$ ]]\
 	 || [[ "$file" =~ .*swp ]]\
 	 || [[ "$file" = "dotinstall.sh" ]]\
-	 || [[ "$file" = "mkdirs.sh" ]]\
+	 || [[ "$file" = "apt-install-ansible.sh" ]]\
 	 || [[ "$file" = "README.md" ]]; then
 		continue
 	fi
 
 	if [[ -a $HOME/$file ]]; then
-		mv $HOME/$file $HOME/trash
+		mv $HOME/$file $HOME/old/
 	fi
 
 	echo $file

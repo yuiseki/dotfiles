@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: install git
+      apt: pkg=git
+      sudo: yes
+    - name: install gcc
+      apt: pkg=gcc
+      sudo: yes
+    - name: install make
+      apt: pkg=make
+      sudo: yes
