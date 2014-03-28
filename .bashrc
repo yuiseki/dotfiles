@@ -87,3 +87,11 @@ if [[ -s /home/yuiseki/.rvm/scripts/rvm ]] ; then source /home/yuiseki/.rvm/scri
  esac
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# python virtualenv
+export export WORKON_HOME=$HOME/.virtualenvs
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
+

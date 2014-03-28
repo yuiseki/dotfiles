@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  user: yuiseki
+  tasks:
+    - name: pip install virtualenv
+      sudo: yes
+      pip: name={{item}}
+      with_items:
+        - virtualenv
+        - virtualenvwrapper
+    - name: initialize tmp virtualenv
+      shell: mkvirtualenv tmp
