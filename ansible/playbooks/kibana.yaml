@@ -1,0 +1,60 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  vars:
+    elasticsearch_url: "http://download.elasticsearch.org/elasticsearch/elasticsearch/"
+    elasticsearch_deb: "elasticsearch-1.1.0.deb"
+  tasks:
+    # java
+    - include: includes/java.yaml
+    # apt
+    - name: install apt packages
+      apt: pkg={{item}}
+      with_items:
+        - ruby1.9.1
+        - ruby1.9.1-dev # depends for kibana bundle
+        - build-essential
+        - libcurl4-openssl-dev # depends for fluent-plugin-elasticsearch
+        - dstat # depends for fluent-plugin-dstat
+    # tmp dir
+    - name: make tmp dir
+      file: path=~/tmp/ state=directory
+
+    # elasticsearch
+    - name: get elasticsearch deb
+      get_url: url={{elasticsearch_url}}{{elasticsearch_deb}}
+               dest=~/tmp/{{elasticsearch_deb}}
+    - name: install elasticsearch deb
+      shell: dpkg -i ~/tmp/{{elasticsearch_deb}}
+
+    - name: make elasticsearch config dir
+      file: path=/etc/elasticsearch/ state=directory
+
+    # kibana
+    - name: git clone kibana
+      git: repo=http://github.com/rashidkpc/Kibana.git
+           dest=~/tmp/kibana version=kibana-ruby accept_hostkey=yes
+
+    - name: install bundler
+      gem: name=bundler user_install=no
+
+    - name: bundle install
+      shell: sudo bundle install chdir=~/tmp/kibana
+
+    # fluentd
+    - name: install fluentd
+      shell: curl -L http://toolbelt.treasure-data.com/sh/install-ubuntu-precise.sh | sh
+
+    - name: install fluentd plugins
+      gem: executable=/usr/lib/fluent/ruby/bin/fluent-gem
+           user_install=no
+           name={{item}}
+      with_items:
+        - fluent-plugin-map
+        - fluent-plugin-dstat
+        - fluent-plugin-elasticsearch
+
+
+  handlers:
+    - name: restart elasticsearch
+      action: service name=elasticsearch state=restarted

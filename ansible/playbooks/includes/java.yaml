@@ -1,0 +1,19 @@
+---
+- name: check add-apt-repository
+  apt: pkg=python-software-properties state=latest
+
+- name: add java repos
+  apt_repository: repo=ppa:webupd8team/java
+
+- name: update apt
+  apt: update_cache=yes
+
+- name: install java7
+  shell: echo debconf shared/accepted-oracle-license-v1-1 select true |
+     debconf-set-selections && 
+     echo debconf shared/accepted-oracle-license-v1-1 seen true | 
+     debconf-set-selections &&
+     apt-get -y install oracle-java7-installer
+
+- name: check java
+  shell: java -version
