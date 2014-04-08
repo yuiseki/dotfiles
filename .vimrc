@@ -104,4 +104,10 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
 let g:neocomplcache_snippets_dir = "~/.vim/bundle/snipmate-snippets/snippets"
 
+autocmd FileType python set completeopt-=preview
+
+highlight Comment ctermfg=Cyan
+
+
+
 
