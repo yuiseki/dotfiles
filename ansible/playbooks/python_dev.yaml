@@ -3,6 +3,8 @@
   connection: local
   user: yuiseki
   tasks:
+    # python
+    - include: includes/python.yaml
     - name: pip install virtualenv
       sudo: yes
       pip: name={{item}}

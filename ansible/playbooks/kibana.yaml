@@ -7,12 +7,13 @@
   tasks:
     # java
     - include: includes/java.yaml
+    # ruby
+    # depends for kibana bundle
+    - include: includes/ruby.yaml
     # apt
     - name: install apt packages
       apt: pkg={{item}}
       with_items:
-        - ruby1.9.1
-        - ruby1.9.1-dev # depends for kibana bundle
         - build-essential
         - libcurl4-openssl-dev # depends for fluent-plugin-elasticsearch
         - dstat # depends for fluent-plugin-dstat

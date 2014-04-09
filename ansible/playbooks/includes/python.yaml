@@ -1,0 +1,6 @@
+---
+- name: install python
+  apt: pkg={{item}}
+  with_items:
+    - python2.7
+    - python2.7-dev

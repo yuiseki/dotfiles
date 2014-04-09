@@ -1,0 +1,6 @@
+---
+- name: install ruby
+  apt: pkg={{item}}
+  with_items:
+    - ruby1.9.1
+    - ruby1.9.1-dev # depends for kibana bundle
