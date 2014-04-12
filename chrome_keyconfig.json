@@ -6,6 +6,29 @@
   "ldrize": true,
   "chrome_vim": false,
   "antiAutoFocus": true,
+  "vim_normal_actions": {
+    "Esc": {
+      "name": "normal mode",
+      "args": []
+    }
+  },
+  "vim_insert_actions": {
+    "Esc": {
+      "name": "normal mode",
+      "args": []
+    }
+  },
+  "vim_default_mode": "insert",
+  "vim_color_config": {
+    "normal": {
+      "background": "gray",
+      "text": "black"
+    },
+    "insert": {
+      "background": "white",
+      "text": "black"
+    }
+  },
   "limited_actions": {
     "0": {
       "name": "open new tab",

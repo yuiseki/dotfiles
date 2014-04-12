@@ -5,6 +5,22 @@ smooth_scroll: false
 ldrize: true
 chrome_vim: false
 antiAutoFocus: true
+vim_normal_actions:
+    Esc:
+        name: normal mode
+        args: []
+vim_insert_actions:
+    Esc:
+        name: normal mode
+        args: []
+vim_default_mode: insert
+vim_color_config:
+    normal:
+        background: gray
+        text: black
+    insert:
+        background: white
+        text: black
 
 # 限定モード
 # (jklなどの１キーショートカットがWebサイトで使われている時用)
