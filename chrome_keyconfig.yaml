@@ -1,0 +1,216 @@
+name: Chrome Keyconfig
+version: 1.14.0
+useTabTitle: false
+smooth_scroll: false
+ldrize: true
+chrome_vim: false
+antiAutoFocus: true
+vim_normal_actions:
+    Esc:
+        name: normal mode
+        args: []
+vim_insert_actions:
+    Esc:
+        name: normal mode
+        args: []
+vim_default_mode: insert
+vim_color_config:
+    normal:
+        background: gray
+        text: black
+    insert:
+        background: white
+        text: black
+
+# 限定モード
+# (jklなどの１キーショートカットがWebサイトで使われている時用)
+# ----------
+# Twitter : jk
+# ----------
+# Tumblr : jk lR
+# ----------
+# Facebook : jk l
+# ----------
+# はてなブックマーク
+# - jk
+# - o: 開く
+# - e: はてブページを開く
+# Pocket
+# - jk
+# - ctrl+123: マイリスト / archive / favorites 切り替え
+# - a: archive する
+# - f: favorites する
+# - o: 元URLを開く
+# - enter: 記事を開く
+# - s: 検索バーにフォーカス
+# ----------
+# SoundClound
+# - jk
+# - 1-9: シーク
+# - s: 検索
+# - h: help
+# - l: Like
+# - r: Repost
+# - p: 再生中の曲のページ
+# - m: ミュート
+limited_actions:
+    # 前後
+    1: &Back
+        name: back
+        args: []
+        and: false
+    2: &Forward
+        name: forward
+        args: []
+        and: false
+    # 上下
+    6: &Down
+        name: scroll down half page
+        args: []
+        and: false
+    7: &Up
+        name: scroll up half page
+        args: []
+        and: false
+    # 左右
+    8: &LeftTab
+        name: select left tab
+        args: []
+        and: false
+    9: &RightTab
+        name: select right tab
+        args: []
+        and: false
+    # 新しいタブを開く
+    0: &NewTab
+        name: open new tab
+        args: []
+        and: false
+    # 現在のタブを閉じる
+    -: &CloseTab
+        name: close this tab
+        args: []
+        and: false
+    # 現在のタブ以外を閉じる
+    =: &CloseOtherTabs
+        name: close other tabs
+        args: []
+        and: false
+    # 最後に閉じたタブを開く
+    ^: &ReopenTab
+        name: re-open closed tab
+        args: []
+        and: false
+    C-K: &Keyconfig
+        name: Keyconfig
+        args: []
+        and: false
+    ;: *NewTab
+    Esc:
+        name: normal mode
+        args: []
+        and: false
+# ノーマルモード
+normal_actions:
+    Esc:
+        name: limited mode
+        args: []
+        and: false
+    ### 右手
+    # 一段目
+    1: *LeftTab
+    2: *RightTab
+    3: *NewTab
+    4: *CloseTab
+    $: *CloseOtherTabs
+    5: *ReopenTab
+    # 二段目
+    #q:
+    w: *CloseTab
+    W: *CloseOtherTabs
+    e: &NoAction
+        name: no action
+        args: []
+    r: *ReopenTab
+    t: *NewTab
+    # 三段目
+    a: *Back
+    s: *Forward
+    d: *CloseTab
+    D: *CloseOtherTabs
+    #f:
+    #g:
+    
+    ### 左手
+    # 一段目
+    8: *LeftTab
+    9: *RightTab
+    0: *NewTab
+    -: *CloseTab
+    =: *CloseOtherTabs
+    ^: *ReopenTab
+    # 二段目
+    y: *NewTab
+    u: *ReopenTab
+    i: *CloseTab
+    I: *CloseOtherTabs
+    o: *Back
+    p: *Forward
+    # 三段目
+    h: *LeftTab
+    j: *Down
+    k: *Up
+    l: *RightTab
+    L: &TogglePinTab
+        name: toggle pin tab
+        args: []
+        and: false
+    ;: *NewTab
+
+    ### ブクマ
+    b:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var d=(new Date);var s=document.createElement('script');s.charset='UTF-8';s.src='http://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+d.getFullYear()+d.getMonth()+d.getDate();(document.getElementsByTagName('head')[0]||document.body).appendChild(s);})();",
+        "b"
+        ]
+    C:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var json={tag:'culture',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "culture"
+        ]
+    V:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var json={tag:'tech',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "tech"
+        ]
+    X:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var json={tag:['science'],title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "science"
+        ]
+    N:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var json={tag:'news',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "news"
+        ]
+    Z:
+        name: go to #1
+        and: false
+        args: [
+        "javascript:(function(){var json={tag:'life',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "life"
+        ]
+
+
+
+

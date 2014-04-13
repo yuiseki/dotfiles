@@ -1,0 +1,318 @@
+{
+  "name": "Chrome Keyconfig",
+  "version": "1.14.0",
+  "useTabTitle": false,
+  "smooth_scroll": false,
+  "ldrize": true,
+  "chrome_vim": false,
+  "antiAutoFocus": true,
+  "vim_normal_actions": {
+    "Esc": {
+      "name": "normal mode",
+      "args": []
+    }
+  },
+  "vim_insert_actions": {
+    "Esc": {
+      "name": "normal mode",
+      "args": []
+    }
+  },
+  "vim_default_mode": "insert",
+  "vim_color_config": {
+    "normal": {
+      "background": "gray",
+      "text": "black"
+    },
+    "insert": {
+      "background": "white",
+      "text": "black"
+    }
+  },
+  "limited_actions": {
+    "0": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "1": {
+      "name": "back",
+      "args": [],
+      "and": false
+    },
+    "2": {
+      "name": "forward",
+      "args": [],
+      "and": false
+    },
+    "6": {
+      "name": "scroll down half page",
+      "args": [],
+      "and": false
+    },
+    "7": {
+      "name": "scroll up half page",
+      "args": [],
+      "and": false
+    },
+    "8": {
+      "name": "select left tab",
+      "args": [],
+      "and": false
+    },
+    "9": {
+      "name": "select right tab",
+      "args": [],
+      "and": false
+    },
+    "-": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "=": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "^": {
+      "name": "re-open closed tab",
+      "args": [],
+      "and": false
+    },
+    "C-K": {
+      "name": "Keyconfig",
+      "args": [],
+      "and": false
+    },
+    ";": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "Esc": {
+      "name": "normal mode",
+      "args": [],
+      "and": false
+    }
+  },
+  "normal_actions": {
+    "0": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "1": {
+      "name": "select left tab",
+      "args": [],
+      "and": false
+    },
+    "2": {
+      "name": "select right tab",
+      "args": [],
+      "and": false
+    },
+    "3": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "4": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "5": {
+      "name": "re-open closed tab",
+      "args": [],
+      "and": false
+    },
+    "8": {
+      "name": "select left tab",
+      "args": [],
+      "and": false
+    },
+    "9": {
+      "name": "select right tab",
+      "args": [],
+      "and": false
+    },
+    "Esc": {
+      "name": "limited mode",
+      "args": [],
+      "and": false
+    },
+    "$": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "w": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "W": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "e": {
+      "name": "no action",
+      "args": []
+    },
+    "r": {
+      "name": "re-open closed tab",
+      "args": [],
+      "and": false
+    },
+    "t": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "a": {
+      "name": "back",
+      "args": [],
+      "and": false
+    },
+    "s": {
+      "name": "forward",
+      "args": [],
+      "and": false
+    },
+    "d": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "D": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "-": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "=": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "^": {
+      "name": "re-open closed tab",
+      "args": [],
+      "and": false
+    },
+    "y": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "u": {
+      "name": "re-open closed tab",
+      "args": [],
+      "and": false
+    },
+    "i": {
+      "name": "close this tab",
+      "args": [],
+      "and": false
+    },
+    "I": {
+      "name": "close other tabs",
+      "args": [],
+      "and": false
+    },
+    "o": {
+      "name": "back",
+      "args": [],
+      "and": false
+    },
+    "p": {
+      "name": "forward",
+      "args": [],
+      "and": false
+    },
+    "h": {
+      "name": "select left tab",
+      "args": [],
+      "and": false
+    },
+    "j": {
+      "name": "scroll down half page",
+      "args": [],
+      "and": false
+    },
+    "k": {
+      "name": "scroll up half page",
+      "args": [],
+      "and": false
+    },
+    "l": {
+      "name": "select right tab",
+      "args": [],
+      "and": false
+    },
+    "L": {
+      "name": "toggle pin tab",
+      "args": [],
+      "and": false
+    },
+    ";": {
+      "name": "open new tab",
+      "args": [],
+      "and": false
+    },
+    "b": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var d=(new Date);var s=document.createElement('script');s.charset='UTF-8';s.src='http://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+d.getFullYear()+d.getMonth()+d.getDate();(document.getElementsByTagName('head')[0]||document.body).appendChild(s);})();",
+        "b"
+      ]
+    },
+    "C": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var json={tag:'culture',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "culture"
+      ]
+    },
+    "V": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var json={tag:'tech',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "tech"
+      ]
+    },
+    "X": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var json={tag:['science'],title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "science"
+      ]
+    },
+    "N": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var json={tag:'news',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "news"
+      ]
+    },
+    "Z": {
+      "name": "go to",
+      "and": false,
+      "args": [
+        "javascript:(function(){var json={tag:'life',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
+        "life"
+      ]
+    }
+  }
+}
