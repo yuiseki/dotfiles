@@ -169,47 +169,29 @@ normal_actions:
 
     ### ブクマ
     b:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var d=(new Date);var s=document.createElement('script');s.charset='UTF-8';s.src='http://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+d.getFullYear()+d.getMonth()+d.getDate();(document.getElementsByTagName('head')[0]||document.body).appendChild(s);})();",
-        "b"
-        ]
+        args: [ "javascript:(function(){var d=(new Date);var s=document.createElement('script');s.charset='UTF-8';s.src='http://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+d.getFullYear()+d.getMonth()+d.getDate();(document.getElementsByTagName('head')[0]||document.body).appendChild(s);})();", "b" ]
     C:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var json={tag:'culture',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
-        "culture"
-        ]
+        args: [ "javascript:(function(){var json={tag:'culture',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();", "culture" ]
     V:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var json={tag:'tech',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
-        "tech"
-        ]
+        args: [ "javascript:(function(){var json={tag:'tech',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();", "tech" ]
     X:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var json={tag:['science'],title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
-        "science"
-        ]
+        args: [ "javascript:(function(){var json={tag:['science'],title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();", "science" ]
     N:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var json={tag:'news',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
-        "news"
-        ]
+        args: [ "javascript:(function(){var json={tag:'news',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();", "news" ]
     Z:
-        name: go to #1
+        name: "go to #1"
         and: false
-        args: [
-        "javascript:(function(){var json={tag:'life',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
-        "life"
-        ]
+        args: [ "javascript:(function(){var json={tag:'life',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();", "life" ]
 
 
 

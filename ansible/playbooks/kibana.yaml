@@ -32,15 +32,8 @@
       file: path=/etc/elasticsearch/ state=directory
 
     # kibana
-    - name: git clone kibana
-      git: repo=http://github.com/rashidkpc/Kibana.git
-           dest=~/tmp/kibana version=kibana-ruby accept_hostkey=yes
-
-    - name: install bundler
-      gem: name=bundler user_install=no
-
-    - name: bundle install
-      shell: sudo bundle install chdir=~/tmp/kibana
+    - name: install kibana
+      shell: /usr/share/elasticsearch/bin/plugin -i elasticsearch/kibana
 
     # fluentd
     - name: install fluentd
@@ -54,7 +47,6 @@
         - fluent-plugin-map
         - fluent-plugin-dstat
         - fluent-plugin-elasticsearch
-
 
   handlers:
     - name: restart elasticsearch

@@ -267,7 +267,7 @@
       "and": false
     },
     "b": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var d=(new Date);var s=document.createElement('script');s.charset='UTF-8';s.src='http://b.hatena.ne.jp/js/Hatena/Bookmark/let.js?'+d.getFullYear()+d.getMonth()+d.getDate();(document.getElementsByTagName('head')[0]||document.body).appendChild(s);})();",
@@ -275,7 +275,7 @@
       ]
     },
     "C": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var json={tag:'culture',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
@@ -283,7 +283,7 @@
       ]
     },
     "V": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var json={tag:'tech',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
@@ -291,7 +291,7 @@
       ]
     },
     "X": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var json={tag:['science'],title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
@@ -299,7 +299,7 @@
       ]
     },
     "N": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var json={tag:'news',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
@@ -307,7 +307,7 @@
       ]
     },
     "Z": {
-      "name": "go to",
+      "name": "go to #1",
       "and": false,
       "args": [
         "javascript:(function(){var json={tag:'life',title:document.title,url:location.href};var jsonstr=encodeURIComponent(JSON.stringify(json));var isrc='http://yuiseki.net:8888/bkmk?json='+jsonstr; var i=new Image();i.src=isrc;document.body.appendChild(i); })();",
